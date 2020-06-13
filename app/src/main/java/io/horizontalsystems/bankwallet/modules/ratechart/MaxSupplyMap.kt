@@ -25,6 +25,7 @@ object MaxSupplyMap {
             "DGD" to BigDecimal(2_000_000),
             "ENJ" to BigDecimal(1_000_000_000),
             "IQ" to BigDecimal(10_006_128_771),
+            "GHOST" to BigDecimal(13_573_415 ),
             "GTO" to BigDecimal(1_000_000_000),
             "GNT" to BigDecimal(1_000_000_000),
             "HOT" to BigDecimal(177_619_433_541),
