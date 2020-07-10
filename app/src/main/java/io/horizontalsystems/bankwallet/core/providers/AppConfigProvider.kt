@@ -51,6 +51,7 @@ class AppConfigProvider : IAppConfigProvider, ILanguageConfigProvider, IAppConfi
                 Coin("ETH", "Ethereum", "ETH", 18, CoinType.Ethereum),
                 Coin("BCH", "Bitcoin Cash", "BCH", 8, CoinType.BitcoinCash),
                 Coin("DASH", "Dash", "DASH", 8, CoinType.Dash),
+                Coin("IDX", "IndexChain", "IDX", 8, CoinType.IndexChain),
                 Coin("BNB", "Binance DEX", "BNB", 8, CoinType.Binance("BNB")),
                 Coin("EOS", "EOS", "EOS", 4, CoinType.Eos("eosio.token", "EOS")),
                 Coin("ZRX", "0x Protocol", "ZRX", 18, CoinType.Erc20("0xE41d2489571d322189246DaFA5ebDe1F4699F498")),
@@ -123,13 +124,15 @@ class AppConfigProvider : IAppConfigProvider, ILanguageConfigProvider, IAppConfi
     override val derivationSettings: List<DerivationSetting>
         get() = listOf(
                 DerivationSetting(CoinType.Bitcoin, AccountType.Derivation.bip49),
-                DerivationSetting(CoinType.Litecoin, AccountType.Derivation.bip49)
+                DerivationSetting(CoinType.Litecoin, AccountType.Derivation.bip49),
+                DerivationSetting(CoinType.IndexChain, AccountType.Derivation.bip44)
         )
 
     override val syncModeSettings: List<SyncModeSetting>
         get() = listOf(
                 SyncModeSetting(CoinType.Bitcoin, SyncMode.Fast),
                 SyncModeSetting(CoinType.Litecoin, SyncMode.Fast),
+                SyncModeSetting(CoinType.IndexChain, SyncMode.Fast),
                 SyncModeSetting(CoinType.Dash, SyncMode.Fast)
         )
 

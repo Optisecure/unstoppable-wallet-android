@@ -60,6 +60,7 @@ object PrivacySettingsModule {
         fun binance(): Coin
         fun bitcoin(): Coin
         fun litecoin(): Coin
+        fun indexchain(): Coin
         fun bitcoinCash(): Coin
         fun dash(): Coin
         fun getWalletsForUpdate(coinType: CoinType): List<Wallet>

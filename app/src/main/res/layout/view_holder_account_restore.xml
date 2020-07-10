@@ -42,6 +42,6 @@
         android:textColor="@color/grey"
         app:layout_constraintEnd_toEndOf="@+id/accountName"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="BTC, BCH, DASH, ETH, ERC20" />
+        tools:text="BTC, BCH, DASH, IDX, ETH, ERC20" />
 
 </LinearLayout>
