@@ -502,7 +502,7 @@
     <!-- Account Types -->
 
     <string name="AccountType_Unstoppable">Standard</string>
-    <string name="AccountType_Unstoppable_Text" translatable="false">BTC, LTC, BCH, DASH, ETH, ERC20 tokens</string>
+    <string name="AccountType_Unstoppable_Text" translatable="false">BTC, LTC, BCH, DASH, IDX, ETH, ERC20 tokens</string>
     <string name="AccountType_Eos" translatable="false">EOS</string>
     <string name="AccountType_Eos_Text" translatable="false">EOS, EOSIO tokens</string>
     <string name="AccountType_Binance" translatable="false">Binance</string>

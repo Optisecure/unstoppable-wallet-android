@@ -66,6 +66,7 @@ class DatabaseConverters {
             CoinType.Litecoin -> litecoin
             CoinType.BitcoinCash -> bitcoinCash
             CoinType.Dash -> dash
+            CoinType.IndexChain -> indexchain
             CoinType.Ethereum -> ethereum
             else -> ""
         }
@@ -76,6 +77,7 @@ class DatabaseConverters {
         return when (value) {
             bitcoin -> CoinType.Bitcoin
             litecoin -> CoinType.Litecoin
+            indexchain -> CoinType.IndexChain
             bitcoinCash -> CoinType.BitcoinCash
             dash -> CoinType.Dash
             ethereum -> CoinType.Ethereum
@@ -88,6 +90,7 @@ class DatabaseConverters {
         const val litecoin = "litecoin"
         const val bitcoinCash = "bitcoincash"
         const val dash = "dash"
+        const val indexchain = "indexchain"
         const val ethereum = "ethereum"
     }
 

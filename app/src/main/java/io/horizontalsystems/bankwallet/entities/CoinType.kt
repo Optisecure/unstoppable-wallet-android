@@ -9,6 +9,7 @@ sealed class CoinType : Parcelable {
     @Parcelize object Litecoin : CoinType()
     @Parcelize object BitcoinCash : CoinType()
     @Parcelize object Dash : CoinType()
+    @Parcelize object IndexChain : CoinType()
     @Parcelize object Ethereum : CoinType()
 
     @Parcelize class Erc20(val address: String, val fee: BigDecimal = BigDecimal.ZERO, val minimumRequiredBalance: BigDecimal = BigDecimal.ZERO, val minimumSendAmount: BigDecimal = BigDecimal.ZERO) : CoinType()
@@ -24,6 +25,7 @@ sealed class CoinType : Parcelable {
             is Litecoin,
             is BitcoinCash,
             is Dash,
+            is IndexChain,
             is Ethereum,
             is Erc20 -> {
                 if (accountType is AccountType.Mnemonic) {
@@ -53,6 +55,7 @@ sealed class CoinType : Parcelable {
         get() = when (this) {
             is Bitcoin,
             is Litecoin,
+            is IndexChain,
             is Erc20,
             is BitcoinCash,
             is Dash,

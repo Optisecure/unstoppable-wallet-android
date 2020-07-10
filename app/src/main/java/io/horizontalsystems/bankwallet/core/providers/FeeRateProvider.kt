@@ -24,6 +24,10 @@ class FeeRateProvider(appConfig: IAppConfigProvider) {
         return feeRateKit.litecoin().map { feeRates(it) }
     }
 
+    fun indexchainFeeRates(): Single<List<FeeRateInfo>> {
+        return feeRateKit.indexchain().map { feeRates(it) }
+    }
+
     fun bitcoinCashFeeRates(): Single<List<FeeRateInfo>> {
         return feeRateKit.bitcoinCash().map { feeRates(it) }
     }
@@ -58,6 +62,12 @@ class BitcoinFeeRateProvider(private val feeRateProvider: FeeRateProvider) : IFe
 class LitecoinFeeRateProvider(private val feeRateProvider: FeeRateProvider) : IFeeRateProvider {
     override fun feeRates(): Single<List<FeeRateInfo>> {
         return feeRateProvider.litecoinFeeRates()
+    }
+}
+
+class IndexChainFeeRateProvider(private val feeRateProvider: FeeRateProvider) : IFeeRateProvider {
+    override fun feeRates(): Single<List<FeeRateInfo>> {
+        return feeRateProvider.indexchainFeeRates()
     }
 }
 

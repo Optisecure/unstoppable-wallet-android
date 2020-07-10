@@ -43,6 +43,7 @@ interface ILocalStorage {
     var baseLitecoinProvider: String?
     var baseEthereumProvider: String?
     var baseDashProvider: String?
+    var baseIndexChainProvider: String?
     var baseBinanceProvider: String?
     var baseEosProvider: String?
     var syncMode: SyncMode?
@@ -136,6 +137,7 @@ interface ITransactionDataProviderManager {
     fun bitcoin(name: String): FullTransactionInfoModule.BitcoinForksProvider
     fun litecoin(name: String): FullTransactionInfoModule.BitcoinForksProvider
     fun dash(name: String): FullTransactionInfoModule.BitcoinForksProvider
+    fun indexchain(name: String): FullTransactionInfoModule.BitcoinForksProvider
     fun bitcoinCash(name: String): FullTransactionInfoModule.BitcoinForksProvider
     fun ethereum(name: String): FullTransactionInfoModule.EthereumForksProvider
     fun binance(name: String): FullTransactionInfoModule.BinanceProvider

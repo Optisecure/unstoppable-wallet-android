@@ -10,6 +10,7 @@ object CoinInfoMap {
             "ETH" to CoinInfo( null,  "30/07/2015", "https://www.ethereum.org"),
             "BCH" to CoinInfo(BigDecimal(21_000_000), "01/08/2017", "https://www.bitcoincash.org"),
             "DASH" to CoinInfo(BigDecimal(18_900_000), "18/01/2014", "http://dash.org"),
+            "IDX" to CoinInfo(BigDecimal(350_000_000), "18/01/2020", "https://indexchain.org"),
             "BNB" to CoinInfo(BigDecimal(187_536_713), "27/06/2017", "https://www.binance.com"),
             "EOS" to CoinInfo(BigDecimal(1_035_000_004), "26/06/2017", "https://eos.io"),
             "ZRX" to CoinInfo(BigDecimal(1_000_000_000), "15/08/2017", "https://www.0xproject.com/#home"),

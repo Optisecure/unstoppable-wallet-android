@@ -28,6 +28,7 @@ class AdapterFactory(
             is CoinType.Litecoin -> LitecoinAdapter(wallet, derivation, syncMode, testMode)
             is CoinType.BitcoinCash -> BitcoinCashAdapter(wallet, syncMode, testMode)
             is CoinType.Dash -> DashAdapter(wallet, syncMode, testMode)
+            is CoinType.IndexChain -> IndexchainAdapter(wallet, derivation, syncMode, testMode)
             is CoinType.Eos -> EosAdapter(coinType, eosKitManager.eosKit(wallet), wallet.coin.decimal)
             is CoinType.Binance -> BinanceAdapter(binanceKitManager.binanceKit(wallet), coinType.symbol)
             is CoinType.Ethereum -> EthereumAdapter(ethereumKitManager.ethereumKit(wallet, communicationMode))

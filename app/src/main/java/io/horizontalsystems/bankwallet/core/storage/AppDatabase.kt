@@ -181,7 +181,7 @@ abstract class AppDatabase : RoomDatabase() {
                             )
                         }
 
-                        if (coinId == "BTC" || coinId == "BCH" || coinId == "DASH") {
+                        if (coinId == "BTC" || coinId == "BCH" || coinId == "DASH" || coinId == "IDX") {
                             var newSyncMode = SyncMode.Fast
 
                             try {
@@ -274,7 +274,9 @@ abstract class AppDatabase : RoomDatabase() {
                             "DASH" -> {
                                 coinTypeStr = dbConverter.fromCoinType(CoinType.Dash)
                             }
-
+                            "IDX" -> {
+                                coinTypeStr = dbConverter.fromCoinType(CoinType.IndexChain)
+                            }
                             "ETH" -> {
                                 coinTypeStr = dbConverter.fromCoinType(CoinType.Ethereum)
                                 syncModeStr = null

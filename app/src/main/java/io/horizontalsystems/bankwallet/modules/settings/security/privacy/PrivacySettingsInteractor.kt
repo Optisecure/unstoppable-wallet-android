@@ -140,6 +140,10 @@ class PrivacySettingsInteractor(
         return coinManager.coins.first { it.code == "LTC" }
     }
 
+    override fun indexchain(): Coin {
+        return coinManager.coins.first { it.code == "IDX" }
+    }
+
     override fun bitcoinCash(): Coin {
         return coinManager.coins.first { it.code == "BCH" }
     }
