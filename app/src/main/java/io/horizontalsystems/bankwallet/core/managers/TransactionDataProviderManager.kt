@@ -67,6 +67,15 @@ class TransactionDataProviderManager(
         }
     }
 
+    private val indexchainProviders: List<BitcoinForksProvider> by lazy {
+        when {
+            testMode -> listOf(HorsysDashProvider(testMode))
+            else -> listOf(
+                    InsightIndexChainProvider()
+            )
+        }
+    }
+
     private val binanceProviders: List<FullTransactionInfoModule.BinanceProvider> by lazy {
         when {
             testMode -> listOf(BinanceChainProvider(testMode))
@@ -86,6 +95,7 @@ class TransactionDataProviderManager(
         is CoinType.BitcoinCash -> bitcoinCashProviders
         is CoinType.Ethereum, is CoinType.Erc20 -> ethereumProviders
         is CoinType.Dash -> dashProviders
+        is CoinType.IndexChain -> indexchainProviders
         is CoinType.Binance -> binanceProviders
         is CoinType.Eos -> eosProviders
     }
@@ -102,6 +112,9 @@ class TransactionDataProviderManager(
         }
         is CoinType.Dash -> {
             dash(localStorage.baseDashProvider ?: dashProviders[0].name)
+        }
+        is CoinType.IndexChain -> {
+            dash(localStorage.baseIndexChainProvider ?: indexchainProviders[0].name)
         }
         is CoinType.Binance -> {
             binance(localStorage.baseBinanceProvider ?: binanceProviders[0].name)
@@ -124,6 +137,9 @@ class TransactionDataProviderManager(
             }
             is CoinType.Dash -> {
                 localStorage.baseDashProvider = name
+            }
+            is CoinType.IndexChain -> {
+                localStorage.baseIndexChainProvider = name
             }
             is CoinType.Eos -> {
                 localStorage.baseEosProvider = name
@@ -157,6 +173,12 @@ class TransactionDataProviderManager(
 
     override fun dash(name: String): BitcoinForksProvider {
         dashProviders.let { list ->
+            return list.find { it.name == name } ?: list[0]
+        }
+    }
+
+    override fun indexchain(name: String): BitcoinForksProvider {
+        indexchainProviders.let { list ->
             return list.find { it.name == name } ?: list[0]
         }
     }

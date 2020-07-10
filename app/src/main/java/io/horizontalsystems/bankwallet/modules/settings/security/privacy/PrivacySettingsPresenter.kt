@@ -40,6 +40,7 @@ class PrivacySettingsPresenter(
     private val walletRestoreSettingsViewItems: List<PrivacySettingsViewItem> = listOf(
             interactor.bitcoin(),
             interactor.litecoin(),
+            interactor.indexchain(),
             interactor.bitcoinCash(),
             interactor.dash())
             .mapNotNull { coin ->
