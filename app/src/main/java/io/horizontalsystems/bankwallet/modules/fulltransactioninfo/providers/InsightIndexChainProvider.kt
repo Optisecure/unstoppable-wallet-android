@@ -8,8 +8,8 @@ import io.horizontalsystems.bankwallet.modules.fulltransactioninfo.FullTransacti
 class InsightIndexChainProvider : FullTransactionInfoModule.BitcoinForksProvider {
     private val baseApiUrl = "https://insight.indexchain.org/insight-api-zcoin"
 
-    override val name = "Insight.indexchain.org"
-    override val pingUrl = "$baseApiUrl/blocks"
+    override val name = "insight.indexchain.org"
+    override val pingUrl = "$baseApiUrl/blocks/"
     override val isTrusted: Boolean = true
 
     override fun url(hash: String): String {
