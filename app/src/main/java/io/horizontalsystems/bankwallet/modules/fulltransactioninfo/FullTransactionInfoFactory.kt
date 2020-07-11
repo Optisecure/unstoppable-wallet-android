@@ -49,10 +49,10 @@ class FullTransactionInfoFactory(private val networkManager: INetworkManager, pr
                 adapter = FullTransactionBitcoinAdapter(providerDASH, coin, "duff")
             }
             // IDX,IDXt
-            coin.type is CoinType.Dash -> {
-                val providerIndexchain = dataProviderManager.indexchain(baseProvider.name)
-                provider = providerIndexchain
-                adapter = FullTransactionBitcoinAdapter(providerIndexchain, coin, "satoshi")
+            coin.type is CoinType.IndexChain -> {
+                val providerIDX = dataProviderManager.indexchain(baseProvider.name)
+                provider = providerIDX
+                adapter = FullTransactionBitcoinAdapter(providerIDX, coin, "satoshi")
             }
             // BNB
             coin.type is CoinType.Binance -> {

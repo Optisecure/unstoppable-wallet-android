@@ -29,7 +29,7 @@ class TransactionDataProviderManager(
 
     private val litecoinProviders: List<BitcoinForksProvider> by lazy {
         when {
-            testMode -> listOf()
+            testMode -> listOf(HorsysLitecoinProvider(testMode))
             else -> listOf(
                     HorsysLitecoinProvider(testMode),
                     BlockChairLitecoinProvider()
@@ -69,7 +69,7 @@ class TransactionDataProviderManager(
 
     private val indexchainProviders: List<BitcoinForksProvider> by lazy {
         when {
-            testMode -> listOf(HorsysDashProvider(testMode))
+            testMode -> listOf(InsightIndexChainProvider())
             else -> listOf(
                     InsightIndexChainProvider()
             )
@@ -93,9 +93,9 @@ class TransactionDataProviderManager(
         is CoinType.Bitcoin -> bitcoinProviders
         is CoinType.Litecoin -> litecoinProviders
         is CoinType.BitcoinCash -> bitcoinCashProviders
+        is CoinType.IndexChain -> indexchainProviders
         is CoinType.Ethereum, is CoinType.Erc20 -> ethereumProviders
         is CoinType.Dash -> dashProviders
-        is CoinType.IndexChain -> indexchainProviders
         is CoinType.Binance -> binanceProviders
         is CoinType.Eos -> eosProviders
     }
@@ -114,7 +114,7 @@ class TransactionDataProviderManager(
             dash(localStorage.baseDashProvider ?: dashProviders[0].name)
         }
         is CoinType.IndexChain -> {
-            dash(localStorage.baseIndexChainProvider ?: indexchainProviders[0].name)
+            indexchain(localStorage.baseIndexChainProvider ?: indexchainProviders[0].name)
         }
         is CoinType.Binance -> {
             binance(localStorage.baseBinanceProvider ?: binanceProviders[0].name)
