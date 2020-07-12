@@ -124,8 +124,7 @@ class AppConfigProvider : IAppConfigProvider, ILanguageConfigProvider, IAppConfi
     override val derivationSettings: List<DerivationSetting>
         get() = listOf(
                 DerivationSetting(CoinType.Bitcoin, AccountType.Derivation.bip49),
-                DerivationSetting(CoinType.Litecoin, AccountType.Derivation.bip49),
-                DerivationSetting(CoinType.IndexChain, AccountType.Derivation.bip44)
+                DerivationSetting(CoinType.Litecoin, AccountType.Derivation.bip49)
         )
 
     override val syncModeSettings: List<SyncModeSetting>
