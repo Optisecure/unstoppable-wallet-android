@@ -1,13 +1,13 @@
-package io.horizontalsystems.bankwallet.core.managers
+package io.horizontalsystems.indexwallet.core.managers
 
 import com.nhaarman.mockito_kotlin.*
-import io.horizontalsystems.bankwallet.core.INotificationFactory
-import io.horizontalsystems.bankwallet.core.INotificationManager
-import io.horizontalsystems.bankwallet.core.IPriceAlertsStorage
-import io.horizontalsystems.bankwallet.core.factories.PriceAlertItem
-import io.horizontalsystems.bankwallet.entities.Coin
-import io.horizontalsystems.bankwallet.entities.CoinType
-import io.horizontalsystems.bankwallet.entities.PriceAlert
+import io.horizontalsystems.indexwallet.core.INotificationFactory
+import io.horizontalsystems.indexwallet.core.INotificationManager
+import io.horizontalsystems.indexwallet.core.IPriceAlertsStorage
+import io.horizontalsystems.indexwallet.core.factories.PriceAlertItem
+import io.horizontalsystems.indexwallet.entities.Coin
+import io.horizontalsystems.indexwallet.entities.CoinType
+import io.horizontalsystems.indexwallet.entities.PriceAlert
 import junit.framework.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test

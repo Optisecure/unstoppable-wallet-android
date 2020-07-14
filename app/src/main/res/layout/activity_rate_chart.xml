@@ -37,7 +37,7 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <io.horizontalsystems.bankwallet.ui.extensions.LockableNestedScrollView
+    <io.horizontalsystems.indexwallet.ui.extensions.LockableNestedScrollView
         android:id="@+id/scroller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/coinRateDiff"
                 app:layout_constraintEnd_toEndOf="@+id/notificationIcon"/>
 
-            <io.horizontalsystems.bankwallet.ui.extensions.RateDiffView
+            <io.horizontalsystems.indexwallet.ui.extensions.RateDiffView
                 android:id="@+id/coinRateDiff"
                 style="@style/Subhead1"
                 android:layout_width="wrap_content"
@@ -487,6 +487,6 @@
                 tools:text="bitcoin.org" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </io.horizontalsystems.bankwallet.ui.extensions.LockableNestedScrollView>
+    </io.horizontalsystems.indexwallet.ui.extensions.LockableNestedScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

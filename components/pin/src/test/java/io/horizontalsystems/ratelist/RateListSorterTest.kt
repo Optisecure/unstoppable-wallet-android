@@ -1,8 +1,7 @@
-package io.horizontalsystems.bankwallet.modules.ratelist
+package io.horizontalsystems.indexwallet.modules.ratelist
 
-import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
-import io.horizontalsystems.bankwallet.entities.Coin
+import io.horizontalsystems.indexwallet.entities.Coin
 import junit.framework.Assert.assertEquals
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe

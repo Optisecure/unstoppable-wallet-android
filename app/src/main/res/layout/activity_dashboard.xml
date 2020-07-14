@@ -43,7 +43,7 @@
         app:layout_behavior="@string/bottom_sheet_behavior"
         >
 
-        <io.horizontalsystems.bankwallet.modules.transactions.transactionInfo.TransactionInfoView
+        <io.horizontalsystems.indexwallet.modules.transactions.transactionInfo.TransactionInfoView
             android:id="@+id/transactionInfoView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

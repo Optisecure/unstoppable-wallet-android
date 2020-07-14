@@ -1,0 +1,49 @@
+package io.horizontalsystems.indexwallet.core.managers
+
+import io.horizontalsystems.indexwallet.core.App
+import io.horizontalsystems.indexwallet.core.IBinanceKitManager
+import io.horizontalsystems.indexwallet.core.UnsupportedAccountException
+import io.horizontalsystems.indexwallet.entities.AccountType
+import io.horizontalsystems.indexwallet.entities.Wallet
+import io.horizontalsystems.binancechainkit.BinanceChainKit
+
+class BinanceKitManager(
+        private val testMode: Boolean
+) : IBinanceKitManager {
+    private var kit: BinanceChainKit? = null
+    private var useCount = 0
+
+    override val binanceKit: BinanceChainKit?
+        get() = kit
+
+    override val statusInfo: Map<String, Any>?
+        get() = kit?.statusInfo()
+
+    override fun binanceKit(wallet: Wallet): BinanceChainKit {
+        val account = wallet.account
+        if (account.type is AccountType.Mnemonic && account.type.words.size == 24) {
+            useCount += 1
+
+            kit?.let { return it }
+            val networkType = if (testMode)
+                BinanceChainKit.NetworkType.TestNet else
+                BinanceChainKit.NetworkType.MainNet
+
+            kit = BinanceChainKit.instance(App.instance, account.type.words, account.id, networkType)
+            kit?.refresh()
+
+            return kit!!
+        }
+
+        throw UnsupportedAccountException()
+    }
+
+    override fun unlink() {
+        useCount -= 1
+
+        if (useCount < 1) {
+            kit?.stop()
+            kit = null
+        }
+    }
+}

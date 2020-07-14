@@ -1,4 +1,4 @@
-package io.horizontalsystems.bankwallet.modules.createwallet
+package io.horizontalsystems.indexwallet.modules.createwallet
 
 import org.junit.Test
 

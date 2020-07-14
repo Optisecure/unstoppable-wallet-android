@@ -36,7 +36,7 @@
     <string name="Intro_Privacy_Title">Privatsphäre</string>
     <string name="Intro_Privacy_Description">Bleiben Sie inkognito und unbemerkt, während Sie Ihr Vermögen vermehren</string>
     <!--Welcome-->
-    <string name="Welcome_Title">Unstoppable\nWallet</string>
+    <string name="Welcome_Title">IndexWallet</string>
     <string name="Welcome_PrivacySettings">Privatsphäre-Einstellungen</string>
     <string name="Welcome_CreateWallet">Wallet Erstellen</string>
     <string name="Welcome_RestoreWallet">Wallet Wiederherstellen</string>

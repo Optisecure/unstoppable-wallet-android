@@ -1,11 +1,11 @@
-package io.horizontalsystems.bankwallet.modules.fulltransactioninfo
+package io.horizontalsystems.indexwallet.modules.fulltransactioninfo
 
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.entities.Coin
-import io.horizontalsystems.bankwallet.entities.FullTransactionItem
-import io.horizontalsystems.bankwallet.entities.FullTransactionRecord
-import io.horizontalsystems.bankwallet.entities.Wallet
+import io.horizontalsystems.indexwallet.entities.Coin
+import io.horizontalsystems.indexwallet.entities.FullTransactionItem
+import io.horizontalsystems.indexwallet.entities.FullTransactionRecord
+import io.horizontalsystems.indexwallet.entities.Wallet
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock

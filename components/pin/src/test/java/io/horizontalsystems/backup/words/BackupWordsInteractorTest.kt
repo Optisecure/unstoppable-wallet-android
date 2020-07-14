@@ -1,8 +1,8 @@
-package io.horizontalsystems.bankwallet.modules.backup.words
+package io.horizontalsystems.indexwallet.modules.backup.words
 
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.verify
-import io.horizontalsystems.bankwallet.core.IRandomProvider
+import io.horizontalsystems.indexwallet.core.IRandomProvider
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 

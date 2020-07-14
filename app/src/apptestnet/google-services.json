@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:171923520792:android:c54a078bba98a5ee81f26d",
         "android_client_info": {
-          "package_name": "io.horizontalsystems.bankwallet.dev.testnet"
+          "package_name": "io.horizontalsystems.indexwallet.dev.testnet"
         }
       },
       "oauth_client": [

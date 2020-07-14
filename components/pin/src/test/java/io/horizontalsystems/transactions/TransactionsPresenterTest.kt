@@ -1,11 +1,11 @@
-package io.horizontalsystems.bankwallet.modules.transactions
+package io.horizontalsystems.indexwallet.modules.transactions
 
 import com.nhaarman.mockito_kotlin.inOrder
 import com.nhaarman.mockito_kotlin.never
 import com.nhaarman.mockito_kotlin.verifyNoMoreInteractions
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.core.factories.TransactionViewItemFactory
-import io.horizontalsystems.bankwallet.entities.*
+import io.horizontalsystems.indexwallet.core.factories.TransactionViewItemFactory
+import io.horizontalsystems.indexwallet.entities.*
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

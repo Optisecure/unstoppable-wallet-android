@@ -1,0 +1,29 @@
+package io.horizontalsystems.indexwallet.modules.main
+
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import io.horizontalsystems.core.SingleLiveEvent
+
+class MainViewModel : ViewModel(), MainModule.IView {
+
+    lateinit var delegate: MainModule.IViewDelegate
+    val showRateAppLiveEvent = SingleLiveEvent<Unit>()
+    val hideContentLiveData = MutableLiveData<Boolean>()
+
+    fun init() {
+        MainModule.init(this)
+        delegate.viewDidLoad()
+    }
+
+    override fun showRateApp() {
+        showRateAppLiveEvent.postValue(Unit)
+    }
+
+    override fun hideContent(hide: Boolean) {
+        hideContentLiveData.postValue(hide)
+    }
+
+    override fun onCleared() {
+        delegate.onClear()
+    }
+}

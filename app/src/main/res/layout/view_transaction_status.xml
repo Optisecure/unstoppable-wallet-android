@@ -37,7 +37,7 @@
         app:layout_constraintStart_toEndOf="@+id/txTime"
         app:layout_constraintTop_toTopOf="@+id/txTime" />
 
-    <io.horizontalsystems.bankwallet.modules.transactions.TransactionProgressView
+    <io.horizontalsystems.indexwallet.modules.transactions.TransactionProgressView
         android:id="@+id/transactionProgressView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

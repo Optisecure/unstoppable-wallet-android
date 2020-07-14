@@ -1,9 +1,9 @@
-package io.horizontalsystems.bankwallet.modules.restorewords
+package io.horizontalsystems.indexwallet.modules.restorewords
 
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.core.managers.WordsManager
-import io.horizontalsystems.bankwallet.modules.restore.words.RestoreWordsInteractor
-import io.horizontalsystems.bankwallet.modules.restore.words.RestoreWordsModule
+import io.horizontalsystems.indexwallet.core.managers.WordsManager
+import io.horizontalsystems.indexwallet.modules.restore.words.RestoreWordsInteractor
+import io.horizontalsystems.indexwallet.modules.restore.words.RestoreWordsModule
 import io.horizontalsystems.hdwalletkit.Mnemonic
 import org.junit.Before
 import org.junit.Test

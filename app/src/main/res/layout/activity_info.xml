@@ -28,7 +28,7 @@
                 android:textColor="@color/grey"
                 tools:text="Info description" />
 
-            <io.horizontalsystems.bankwallet.modules.transactions.transactionInfo.TransactionInfoItemView
+            <io.horizontalsystems.indexwallet.modules.transactions.transactionInfo.TransactionInfoItemView
                 android:id="@+id/itemTxHash"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textDescription" />
 
-            <io.horizontalsystems.bankwallet.modules.transactions.transactionInfo.TransactionInfoItemView
+            <io.horizontalsystems.indexwallet.modules.transactions.transactionInfo.TransactionInfoItemView
                 android:id="@+id/itemConflictingTxHash"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -12,7 +12,7 @@ More at [https://unstoppable.money](https://unstoppable.money)
 
 ## Download
 
-[https://play.google.com/store/apps/details?id=io.horizontalsystems.bankwallet](https://play.google.com/store/apps/details?id=io.horizontalsystems.bankwallet)
+[https://play.google.com/store/apps/details?id=io.horizontalsystems.indexwallet](https://play.google.com/store/apps/details?id=io.horizontalsystems.indexwallet)
 
 ## Source Code
 

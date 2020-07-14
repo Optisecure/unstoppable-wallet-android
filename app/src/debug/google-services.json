@@ -1,42 +1,64 @@
 {
   "project_info": {
-    "project_number": "588007522041",
-    "firebase_url": "https://unstoppable-dev.firebaseio.com",
-    "project_id": "unstoppable-dev",
-    "storage_bucket": "unstoppable-dev.appspot.com"
+    "project_number": "280511387298",
+    "firebase_url": "https://indexwallet-e95ff.firebaseio.com",
+    "project_id": "indexwallet-e95ff",
+    "storage_bucket": "indexwallet-e95ff.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:588007522041:android:0dc1547153a797daa5ec28",
+        "mobilesdk_app_id": "1:280511387298:android:f410c0848379da633969fb",
         "android_client_info": {
-          "package_name": "io.horizontalsystems.bankwallet.dev"
+          "package_name": "io.horizontalsystems.indexwallet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "588007522041-8uci9tj35ifqbrj3e0f4855h874c1pis.apps.googleusercontent.com",
+          "client_id": "280511387298-n0uk0hetti41hram8f7fl6rckdh9vc5k.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBZOk2vz8FmeRw8WvpNj8e7zdorzGzIvcM"
+          "current_key": "AIzaSyDnvNjBZ2hQ3aMZsMq4KVZEI6AXdoupiDU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "588007522041-8uci9tj35ifqbrj3e0f4855h874c1pis.apps.googleusercontent.com",
+              "client_id": "280511387298-n0uk0hetti41hram8f7fl6rckdh9vc5k.apps.googleusercontent.com",
               "client_type": 3
-            },
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280511387298:android:622d3bdaa9fc99ee3969fb",
+        "android_client_info": {
+          "package_name": "io.horizontalsystems.indexwallet.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "280511387298-n0uk0hetti41hram8f7fl6rckdh9vc5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnvNjBZ2hQ3aMZsMq4KVZEI6AXdoupiDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
             {
-              "client_id": "588007522041-cqmf5655j8vvshg21il0lpcdmgr07t5c.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "io.horizontalsystems.bank-wallet.dev"
-              }
+              "client_id": "280511387298-n0uk0hetti41hram8f7fl6rckdh9vc5k.apps.googleusercontent.com",
+              "client_type": 3
             }
           ]
         }

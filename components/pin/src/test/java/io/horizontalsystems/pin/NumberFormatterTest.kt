@@ -1,9 +1,9 @@
-package io.horizontalsystems.bankwallet.core.managers
+package io.horizontalsystems.indexwallet.core.managers
 
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.core.ILanguageManager
-import io.horizontalsystems.bankwallet.entities.*
-import io.horizontalsystems.bankwallet.entities.Currency
+import io.horizontalsystems.indexwallet.core.ILanguageManager
+import io.horizontalsystems.indexwallet.entities.*
+import io.horizontalsystems.indexwallet.entities.Currency
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

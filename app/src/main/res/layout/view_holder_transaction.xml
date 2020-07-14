@@ -47,7 +47,7 @@
         app:layout_constraintTop_toTopOf="@+id/directionIcon"
         tools:text="Jun 3" />
 
-    <io.horizontalsystems.bankwallet.modules.transactions.TransactionStatusWithTimeView
+    <io.horizontalsystems.indexwallet.modules.transactions.TransactionStatusWithTimeView
         android:id="@+id/txStatusWithTimeView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

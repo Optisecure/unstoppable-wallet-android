@@ -44,7 +44,7 @@
 
     <!--Welcome-->
 
-    <string name="Welcome_Title">Unstoppable\nWallet</string>
+    <string name="Welcome_Title">IndexWallet</string>
     <string name="Welcome_PrivacySettings">Privacy Settings</string>
     <string name="Welcome_CreateWallet">Create Wallet</string>
     <string name="Welcome_RestoreWallet">Restore Wallet</string>
@@ -288,7 +288,7 @@
     <string name="Settings_LightMode">Light Mode</string>
     <string name="Settings_About">About</string>
     <string name="Settings_ShareThisWallet">Tell Friends</string>
-    <string name="Settings_InfoTitleWithVersion" translatable="false">Unstoppable %s</string>
+    <string name="Settings_InfoTitleWithVersion" translatable="false">IndexWallet %s</string>
     <string name="Settings_InfoSubtitle" translatable="false">decentralized app</string>
     <string name="Settings_Report">Contact</string>
 
@@ -350,7 +350,7 @@
     <!--Setting_About-->
 
     <string name="SettingsAbout_Title">About</string>
-    <string name="SettingsAbout_AppTitle">Unstoppable</string>
+    <string name="SettingsAbout_AppTitle">IndexWallet</string>
     <string name="SettingsAbout_Subtitle" translatable="false">Decentralized App</string>
     <string name="SettingsAbout_TermsPrivacySubtitle">Terms &amp; Privacy:</string>
     <string name="SettingsAbout_TermsPrivacyText">This app is peer-to-peer. It does not depend on any web server or tech support personnel to function.
@@ -364,7 +364,7 @@
     <!--Setting_Tell Friends-->
 
     <string name="SettingsShare_Title">Share</string>
-    <string name="SettingsShare_Text">Unstoppable Wallet - a crypto wallet I recommend</string>
+    <string name="SettingsShare_Text">IndexWallet - a crypto wallet I recommend</string>
 
     <!--Setting_Contact-->
 

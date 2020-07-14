@@ -1,6 +1,6 @@
-package io.horizontalsystems.bankwallet.modules.settings.main
+package io.horizontalsystems.indexwallet.modules.settings.main
 
-import io.horizontalsystems.bankwallet.entities.Currency
+import io.horizontalsystems.indexwallet.entities.Currency
 import org.junit.Assert
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe

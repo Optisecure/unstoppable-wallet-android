@@ -30,17 +30,17 @@
                 android:textColor="@color/grey"
                 tools:text="Title" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.SettingItemWithCheckmark
+            <io.horizontalsystems.indexwallet.ui.extensions.SettingItemWithCheckmark
                 android:id="@+id/btcBip44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.SettingItemWithCheckmark
+            <io.horizontalsystems.indexwallet.ui.extensions.SettingItemWithCheckmark
                 android:id="@+id/btcBip49"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.SettingItemWithCheckmark
+            <io.horizontalsystems.indexwallet.ui.extensions.SettingItemWithCheckmark
                 android:id="@+id/btcBip84"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -60,17 +60,17 @@
                 android:textColor="@color/grey"
                 tools:text="Title" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.SettingItemWithCheckmark
+            <io.horizontalsystems.indexwallet.ui.extensions.SettingItemWithCheckmark
                 android:id="@+id/ltcBip44"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.SettingItemWithCheckmark
+            <io.horizontalsystems.indexwallet.ui.extensions.SettingItemWithCheckmark
                 android:id="@+id/ltcBip49"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.SettingItemWithCheckmark
+            <io.horizontalsystems.indexwallet.ui.extensions.SettingItemWithCheckmark
                 android:id="@+id/ltcBip84"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />

@@ -1,14 +1,14 @@
-package io.horizontalsystems.bankwallet.core.managers
+package io.horizontalsystems.indexwallet.core.managers
 
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.core.IAppConfigProvider
-import io.horizontalsystems.bankwallet.core.ILocalStorage
-import io.horizontalsystems.bankwallet.entities.Coin
-import io.horizontalsystems.bankwallet.entities.CoinType
-import io.horizontalsystems.bankwallet.modules.fulltransactioninfo.FullTransactionInfoModule.BitcoinForksProvider
-import io.horizontalsystems.bankwallet.modules.fulltransactioninfo.FullTransactionInfoModule.EthereumForksProvider
-import io.horizontalsystems.bankwallet.modules.fulltransactioninfo.providers.HorsysBitcoinProvider
+import io.horizontalsystems.indexwallet.core.IAppConfigProvider
+import io.horizontalsystems.indexwallet.core.ILocalStorage
+import io.horizontalsystems.indexwallet.entities.Coin
+import io.horizontalsystems.indexwallet.entities.CoinType
+import io.horizontalsystems.indexwallet.modules.fulltransactioninfo.FullTransactionInfoModule.BitcoinForksProvider
+import io.horizontalsystems.indexwallet.modules.fulltransactioninfo.FullTransactionInfoModule.EthereumForksProvider
+import io.horizontalsystems.indexwallet.modules.fulltransactioninfo.providers.HorsysBitcoinProvider
 import org.hamcrest.CoreMatchers.instanceOf
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertThat

@@ -1,0 +1,65 @@
+package io.horizontalsystems.indexwallet.modules.transactions.transactionInfo
+
+import androidx.fragment.app.FragmentActivity
+import io.horizontalsystems.indexwallet.core.App
+import io.horizontalsystems.indexwallet.entities.*
+import io.horizontalsystems.indexwallet.modules.main.MainActivity
+import io.horizontalsystems.indexwallet.modules.send.SendModule
+import io.horizontalsystems.indexwallet.ui.helpers.TextHelper
+import java.util.*
+
+object TransactionInfoModule {
+    interface View {
+        fun showCopied()
+        fun share(value: String)
+        fun showTitle(titleViewItem: TitleViewItem)
+        fun showDetails(items: List<TransactionDetailViewItem>)
+    }
+
+    interface ViewDelegate {
+        fun viewDidLoad()
+        fun onShare()
+        fun openFullInfo()
+        fun onClickLockInfo()
+        fun onClickDoubleSpendInfo()
+        fun onClickRecipientHash()
+        fun onClickTo()
+        fun onClickFrom()
+        fun onClickTransactionId()
+        fun onRawTransaction()
+    }
+
+    interface Interactor {
+        val threshold: Int
+        val lastBlockInfo: LastBlockInfo?
+
+        fun copyToClipboard(value: String)
+        fun getRate(code: String, timestamp: Long): CurrencyValue?
+        fun feeCoin(coin: Coin): Coin?
+        fun getRaw(transactionHash: String): String?
+    }
+
+    interface InteractorDelegate
+
+    interface Router {
+        fun openFullInfo(transactionHash: String, wallet: Wallet)
+        fun openLockInfo(lockDate: Date)
+        fun openDoubleSpendInfo(transactionHash: String, conflictingTxHash: String)
+    }
+
+    fun init(view: TransactionInfoViewModel, router: Router, transactionRecord: TransactionRecord, wallet: Wallet) {
+        val adapter = App.adapterManager.getTransactionsAdapterForWallet(wallet)!!
+        val interactor = TransactionInfoInteractor(TextHelper, adapter, App.xRateManager, App.currencyManager, App.feeCoinProvider)
+        val presenter = TransactionInfoPresenter(interactor, router, transactionRecord, wallet)
+
+        view.delegate = presenter
+        presenter.view = view
+        interactor.delegate = presenter
+    }
+
+    fun start(activity: FragmentActivity, transactionRecord: TransactionRecord, wallet: Wallet) {
+        (activity as? MainActivity)?.openTransactionInfo(transactionRecord, wallet)
+    }
+
+    data class TitleViewItem(val date: Date?, val primaryAmountInfo: SendModule.AmountInfo, val secondaryAmountInfo: SendModule.AmountInfo?, val type: TransactionType, val lockState: TransactionLockState?)
+}

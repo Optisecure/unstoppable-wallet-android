@@ -1,9 +1,9 @@
-package io.horizontalsystems.bankwallet.modules.receive
+package io.horizontalsystems.indexwallet.modules.receive
 
 import com.nhaarman.mockito_kotlin.verify
-import io.horizontalsystems.bankwallet.R
-import io.horizontalsystems.bankwallet.entities.Coin
-import io.horizontalsystems.bankwallet.modules.receive.viewitems.AddressItem
+import io.horizontalsystems.indexwallet.R
+import io.horizontalsystems.indexwallet.entities.Coin
+import io.horizontalsystems.indexwallet.modules.receive.viewitems.AddressItem
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito
