@@ -2,8 +2,6 @@ package io.horizontalsystems.indexwallet.modules.send.submodules.fee
 
 import io.horizontalsystems.indexwallet.core.IAppNumberFormatter
 import io.horizontalsystems.indexwallet.entities.Coin
-import io.horizontalsystems.indexwallet.entities.CoinValue
-import io.horizontalsystems.indexwallet.entities.CurrencyValue
 import io.horizontalsystems.indexwallet.modules.send.SendModule
 import io.horizontalsystems.core.entities.Currency
 import java.math.BigDecimal

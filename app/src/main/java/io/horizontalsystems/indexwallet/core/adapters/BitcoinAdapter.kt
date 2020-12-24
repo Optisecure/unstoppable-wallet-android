@@ -1,6 +1,5 @@
 package io.horizontalsystems.indexwallet.core.adapters
 
-import io.horizontalsystems.indexwallet.core.AdapterState
 import io.horizontalsystems.indexwallet.core.App
 import io.horizontalsystems.indexwallet.core.ISendBitcoinAdapter
 import io.horizontalsystems.indexwallet.core.UnsupportedAccountException
@@ -11,9 +10,7 @@ import io.horizontalsystems.bitcoincore.models.BlockInfo
 import io.horizontalsystems.bitcoincore.models.TransactionInfo
 import io.horizontalsystems.bitcoinkit.BitcoinKit
 import io.horizontalsystems.bitcoinkit.BitcoinKit.NetworkType
-import io.horizontalsystems.core.helpers.DateHelper
 import java.math.BigDecimal
-import java.util.*
 
 class BitcoinAdapter(
         override val kit: BitcoinKit,

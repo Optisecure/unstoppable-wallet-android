@@ -1,6 +1,5 @@
 package io.horizontalsystems.indexwallet.core.adapters
 
-import io.horizontalsystems.indexwallet.core.AdapterState
 import io.horizontalsystems.indexwallet.core.App
 import io.horizontalsystems.indexwallet.core.ISendBitcoinAdapter
 import io.horizontalsystems.indexwallet.core.UnsupportedAccountException
@@ -9,11 +8,9 @@ import io.horizontalsystems.bitcoincore.BitcoinCore
 import io.horizontalsystems.bitcoincore.models.BalanceInfo
 import io.horizontalsystems.bitcoincore.models.BlockInfo
 import io.horizontalsystems.bitcoincore.models.TransactionInfo
-import io.horizontalsystems.core.helpers.DateHelper
 import io.horizontalsystems.litecoinkit.LitecoinKit
 import io.horizontalsystems.litecoinkit.LitecoinKit.NetworkType
 import java.math.BigDecimal
-import java.util.*
 
 class LitecoinAdapter(
         override val kit: LitecoinKit,

@@ -8,7 +8,6 @@ import io.reactivex.Flowable
 import io.reactivex.Single
 import java.math.BigDecimal
 import java.math.BigInteger
-import java.math.RoundingMode
 
 abstract class EthereumBaseAdapter(
         protected val ethereumKit: EthereumKit,

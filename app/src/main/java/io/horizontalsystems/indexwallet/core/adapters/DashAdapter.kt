@@ -1,6 +1,5 @@
 package io.horizontalsystems.indexwallet.core.adapters
 
-import io.horizontalsystems.indexwallet.core.AdapterState
 import io.horizontalsystems.indexwallet.core.App
 import io.horizontalsystems.indexwallet.core.ISendDashAdapter
 import io.horizontalsystems.indexwallet.core.UnsupportedAccountException
@@ -11,13 +10,11 @@ import io.horizontalsystems.indexwallet.entities.Wallet
 import io.horizontalsystems.bitcoincore.BitcoinCore
 import io.horizontalsystems.bitcoincore.models.BalanceInfo
 import io.horizontalsystems.bitcoincore.models.BlockInfo
-import io.horizontalsystems.core.helpers.DateHelper
 import io.horizontalsystems.dashkit.DashKit
 import io.horizontalsystems.dashkit.DashKit.NetworkType
 import io.horizontalsystems.dashkit.models.DashTransactionInfo
 import io.reactivex.Single
 import java.math.BigDecimal
-import java.util.*
 
 class DashAdapter(
         override val kit: DashKit,

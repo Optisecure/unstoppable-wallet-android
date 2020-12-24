@@ -10,7 +10,7 @@ androidExtensions {
 }
 
 def computeVersionCode() {
-    ext.buildNumber = System.getenv("BUILD_NUMBER") ?: 29
+    ext.buildNumber = System.getenv("BUILD_NUMBER") ?: 30
     return "$buildNumber".toInteger()
 }
 
@@ -21,7 +21,7 @@ android {
         minSdkVersion 26
         targetSdkVersion 29
         versionCode computeVersionCode()
-        versionName "0.16.0"
+        versionName "0.16.1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         kapt {
@@ -172,7 +172,7 @@ dependencies {
     implementation 'pub.devrel:easypermissions:3.0.0'
 
     // Wallet kits
-    implementation 'com.github.Optisecure:bitcoin-kit-android:83f1cd6'
+    implementation 'com.github.Optisecure:bitcoin-kit-android:3e64658'
     implementation 'com.github.horizontalsystems:ethereum-kit-android:781f89b'
     implementation 'com.github.Optisecure:blockchain-fee-rate-kit-android:97e0f9d'
     implementation 'com.github.horizontalsystems:hd-wallet-kit-android:41d5525'
